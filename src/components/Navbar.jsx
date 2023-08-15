@@ -42,7 +42,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center h-20 px-4">
+    <div className="flex justify-between items-center h-20 px-4 bg-transparent absolute z-[10] text-white w-full">
       <div>
         <h1 className={logo ? "hidden duration-[.5s]" : "block duration-[.5s]"}>
           BEACHES
@@ -80,7 +80,7 @@ const Navbar = () => {
             {nav && <AiOutlineClose size={20} />}
           </div>
           {navLinks.map(({ id, name }) => (
-            <li className="border-b " key={id}>
+            <li className="border-b text-black border-black/50" key={id}>
               {name}
             </li>
           ))}
